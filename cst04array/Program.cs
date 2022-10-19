@@ -53,6 +53,7 @@ for(int i = 0; i < pocet; i++)
 }
 Console.WriteLine(jednicky);
 */
+/*
 int[,] vysky = new int[3, 2];
 vysky[0, 0] = 100;
 vysky[1, 0] = 10;
@@ -94,4 +95,83 @@ foreach(var radek in data)
         Console.Write(hodnota);
     }
     Console.WriteLine();
+}
+*/
+using System.Runtime.Serialization.Formatters;
+
+int[] pole = { 1,5,8,6,2,3,4,1,5 };
+//Console.WriteLine(Array.MaxLength); // maximální počet prvků
+//Array.Clear(pole); // vynulování
+//Array.Fill(pole,5); // naplnění 5
+//pole = Range(1,10); // vlastní funkce Range
+//Array.Sort(pole); // seřazení pole
+//Array.Reverse(pole); // obrácení pole
+/*
+Console.WriteLine(Array.IndexOf(pole, 6));
+Console.WriteLine(Array.IndexOf(pole, 7));
+Console.WriteLine(Array.LastIndexOf(pole, 1));
+
+int[] pole2 = pole; // reference na stejné místo
+int[] pole3 = (int[])pole.Clone(); // mělká kopie
+pole2[1] = 500;
+pole3[2] = 1000;
+*/
+pole = IncrementArray1(pole,1);
+IncrementArray2(ref pole,1);
+
+ResizeArray(ref pole, pole.Length + 3);
+foreach (var x in pole)
+{
+    Console.Write(x + ";");
+}
+Console.WriteLine();
+/*
+foreach (var x in pole2)
+{
+    Console.Write(x + ";");
+}
+Console.WriteLine();
+foreach (var x in pole3)
+{
+    Console.Write(x + ";");
+}
+Console.WriteLine();
+*/
+int[] Range(int min, int max)
+{
+    int[] res = new int[max - min + 1];
+    for (int i = 0; i <= max - min; i++)
+    {
+        res[i] = min + i;
+    }
+    return res;
+}
+
+void ResizeArray(ref int[] arr, int newSize)
+{
+    int[] res = new int[newSize];
+    for(int i = 0; i < res.Length; i++)
+    {
+        if (i < arr.Length) res[i] = arr[i];
+    }
+    arr = res;
+}
+
+int[] IncrementArray1(int[] arr, int value)
+{
+    int[] res = new int[arr.Length];
+    for (int i = 0; i < res.Length; i++)
+    {
+        res[i] = arr[i] + value;
+    }
+    return res;
+}
+
+void IncrementArray2(ref int[] arr, int value)
+{
+    int[] res = new int[arr.Length];
+    for (int i = 0; i < res.Length; i++)
+    {
+        arr[i] += value;
+    }
 }

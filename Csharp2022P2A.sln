@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cst02types", "Cst02types\Cs
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cst03enum", "Cst03enum\Cst03enum.csproj", "{B4DE63C9-E7B6-48D7-AFF7-B8A20563DF3B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cst04array", "cst04array\cst04array.csproj", "{2742009D-A049-4571-A524-F596F0FFB0AD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "cst04array", "cst04array\cst04array.csproj", "{2742009D-A049-4571-A524-F596F0FFB0AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cst05object", "cst05object\cst05object.csproj", "{4D1E8DBA-5207-4169-B861-116B77FBD288}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{2742009D-A049-4571-A524-F596F0FFB0AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2742009D-A049-4571-A524-F596F0FFB0AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2742009D-A049-4571-A524-F596F0FFB0AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D1E8DBA-5207-4169-B861-116B77FBD288}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D1E8DBA-5207-4169-B861-116B77FBD288}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D1E8DBA-5207-4169-B861-116B77FBD288}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D1E8DBA-5207-4169-B861-116B77FBD288}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

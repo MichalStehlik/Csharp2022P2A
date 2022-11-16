@@ -15,8 +15,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "cst05object", "cst05object\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "cst06exception", "cst06exception\cst06exception.csproj", "{AC31512F-AFBE-4111-B410-B6087629D1D0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cst07inheritance", "cst07inheritance\cst07inheritance.csproj", "{C7611F07-60A8-401C-A306-79285B514FBC}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,10 +45,6 @@ Global
 		{AC31512F-AFBE-4111-B410-B6087629D1D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AC31512F-AFBE-4111-B410-B6087629D1D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AC31512F-AFBE-4111-B410-B6087629D1D0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C7611F07-60A8-401C-A306-79285B514FBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C7611F07-60A8-401C-A306-79285B514FBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C7611F07-60A8-401C-A306-79285B514FBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C7611F07-60A8-401C-A306-79285B514FBC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

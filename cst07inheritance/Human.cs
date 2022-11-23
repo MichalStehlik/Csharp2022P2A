@@ -8,8 +8,10 @@ namespace cst07inheritance
 {
     internal class Human
     {
+        protected int _iq;
         public Human()
         {
+            _iq = Random.Shared.Next(200);
         }
 
         public Human(string firstname, string lastname, string city)

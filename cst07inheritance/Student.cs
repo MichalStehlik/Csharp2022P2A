@@ -10,6 +10,7 @@ namespace cst07inheritance
     {
         public Student() : base()
         {
+            _iq = 130;
         }
 
         public Student(string firstname, string lastname, string classname, string city) 

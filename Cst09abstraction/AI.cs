@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace Cst09abstraction
 {
-    internal sealed class Student : Human, IGradeable
+    internal class AI : IGradeable
     {
-        public string Classname { get; set; }
-        public double Grade { get; set; }
+        public int Id { get; set; }
+
+        public double Grade { get; private set; }
 
         public void SetGrade(double value)
         {

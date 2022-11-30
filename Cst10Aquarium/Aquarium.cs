@@ -14,6 +14,7 @@ namespace Cst10Aquarium
         private const double PRICE_GLUE = 1; // na 1cm
         private const double PRICE_CUT = 10; // na tabulku skla
         private const double PRICE_GLASS = 100; // na m2
+        private const double DEFAULT_VAT = 1.21;
 
         private double _width;
         private double _length;
@@ -77,6 +78,60 @@ namespace Cst10Aquarium
             return true;
         }
 
+        public double Volume 
+        { 
+            get 
+            { 
+                return Width * Height * Length; 
+            } 
+        }
 
+        public double Edges
+        {
+            get
+            {
+                return (4 * Height + 2 * Width + 2 * Length);
+            }
+        }
+
+        public double Area
+        {
+            get
+            {
+                return ((Width * Length) + (Width * Height) * 2 + (Height * Length) * 2);
+            }
+        }
+
+        public void Resize(double nw, double nl, double nh)
+        {
+            Width = nw;
+            Height = nl;
+            Length = nh;
+            //Width *= nw;
+            //Height *= nl;
+            //Length *= nh;
+        }
+
+        public void Resize(double nv)
+        {
+            //Width = nv;
+            //Height = nv;
+            //Length = nv;
+            Resize(nv,nv,nv);
+        }
+
+        public double Price()
+        {
+            return (
+                5 * PRICE_CUT
+                + PRICE_GLUE * Edges
+                + PRICE_GLASS * Area / 100
+            );
+        }
+
+        public double PriceVAT(double vat = DEFAULT_VAT)
+        {
+            return Price() * vat;
+        }
     }
 }

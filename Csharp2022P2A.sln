@@ -19,7 +19,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cst08polymorphism", "Cst08p
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cst09abstraction", "Cst09abstraction\Cst09abstraction.csproj", "{A12DD110-07CD-4A28-AD60-A5B7638961BE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cst10Aquarium", "Cst10Aquarium\Cst10Aquarium.csproj", "{43566557-9FC2-43CA-A245-A3EE4D4F6D83}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cst10Aquarium", "Cst10Aquarium\Cst10Aquarium.csproj", "{43566557-9FC2-43CA-A245-A3EE4D4F6D83}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cst11OperatorsStructs", "Cst11OperatorsStructs\Cst11OperatorsStructs.csproj", "{6395ECB7-382C-48B3-A6E8-F1CC6838DEA0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{43566557-9FC2-43CA-A245-A3EE4D4F6D83}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{43566557-9FC2-43CA-A245-A3EE4D4F6D83}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{43566557-9FC2-43CA-A245-A3EE4D4F6D83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6395ECB7-382C-48B3-A6E8-F1CC6838DEA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6395ECB7-382C-48B3-A6E8-F1CC6838DEA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6395ECB7-382C-48B3-A6E8-F1CC6838DEA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6395ECB7-382C-48B3-A6E8-F1CC6838DEA0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

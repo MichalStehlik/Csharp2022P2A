@@ -31,3 +31,16 @@ foreach(Student x in students)
 }
 Console.WriteLine(students[0].Firstname);
 // Console.WriteLine(students[100].Firstname); // exception
+students[1] = new Student { Firstname = "Boris"};
+students.RemoveAt(2);
+Console.WriteLine(students.Count);
+
+Console.WriteLine("----");
+Dictionary<string, string> slovnicek = new Dictionary<string, string>();
+slovnicek.Add("pes","dog");
+slovnicek.Add("kocka","cat");
+slovnicek.Add("myš","mouse");
+Console.WriteLine(slovnicek.Count);
+Console.WriteLine(slovnicek["pes"]);
+// Console.WriteLine(slovnicek["velbloud"]); // exception
+slovnicek.Remove("myš");

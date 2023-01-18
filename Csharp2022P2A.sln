@@ -29,7 +29,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cst13Generics", "Cst13Gener
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cst14CollectionList", "Cst14CollectionList\Cst14CollectionList.csproj", "{4AE5C8F6-1CBF-41E3-A56E-CF804967E353}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cst15PostalBag", "Cst15PostalBag\Cst15PostalBag.csproj", "{A3AC005F-0867-4814-86E2-4401B2F61D79}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cst15PostalBag", "Cst15PostalBag\Cst15PostalBag.csproj", "{A3AC005F-0867-4814-86E2-4401B2F61D79}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cst16QueueStack", "Cst16QueueStack\Cst16QueueStack.csproj", "{F2D44CBE-72F9-482F-B6FD-B10E7D569D52}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -93,6 +95,10 @@ Global
 		{A3AC005F-0867-4814-86E2-4401B2F61D79}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A3AC005F-0867-4814-86E2-4401B2F61D79}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A3AC005F-0867-4814-86E2-4401B2F61D79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2D44CBE-72F9-482F-B6FD-B10E7D569D52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2D44CBE-72F9-482F-B6FD-B10E7D569D52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2D44CBE-72F9-482F-B6FD-B10E7D569D52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2D44CBE-72F9-482F-B6FD-B10E7D569D52}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

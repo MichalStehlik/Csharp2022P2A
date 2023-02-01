@@ -1,0 +1,31 @@
+﻿using Cst18LINQ;
+
+List<Student> students = new List<Student>
+{
+    new Student { FirstName = "Arnold", Classroom = "A", AverageGrade = 1.1},
+    new Student { FirstName = "Bořivoj", Classroom = "B", AverageGrade = 3.5},
+    new Student { FirstName = "Ctirad", Classroom = "A", AverageGrade = 1.5},
+    new Student { FirstName = "Dalimil", Classroom = "A", AverageGrade = 2.5},
+    new Student { FirstName = "Evžen", Classroom = "B", AverageGrade = 3.0},
+    new Student { FirstName = "Fiona", Classroom = "A", AverageGrade = 1.6},
+    new Student { FirstName = "Gertrude", Classroom = "B", AverageGrade = 3.8},
+    new Student { FirstName = "Hilde", Classroom = "A", AverageGrade = 4.8},
+    new Student { FirstName = "Igor", Classroom = "B", AverageGrade = 2.2},
+    new Student { FirstName = "Johann", Classroom = "B", AverageGrade = 3.2},
+    new Student { FirstName = "Knut", Classroom = "A", AverageGrade = 2.1},
+    new Student { FirstName = "Libor", Classroom = "B", AverageGrade = 3.1},
+    new Student { FirstName = "Magnus", Classroom = "A", AverageGrade = 1.1},
+    new Student { FirstName = "Niobe", Classroom = "B", AverageGrade = 2.5},
+    new Student { FirstName = "Otmar", Classroom = "A", AverageGrade = 1.1},
+    new Student { FirstName = "Petra", Classroom = "B", AverageGrade = 1.6},
+    new Student { FirstName = "Quido", Classroom = "A", AverageGrade = 2.5},
+    new Student { FirstName = "Roland", Classroom = "A", AverageGrade = 1.8},
+    new Student { FirstName = "Simon", Classroom = "B", AverageGrade = 2.1},
+    new Student { FirstName = "Tadeáš", Classroom = "A", AverageGrade = 4.98},
+    new Student { FirstName = "Uwe", Classroom = "B", AverageGrade = 1.1},
+    new Student { FirstName = "Vanda", Classroom = "B", AverageGrade = 2.3},
+    new Student { FirstName = "Wolfgang", Classroom = "A", AverageGrade = 1.1},
+    new Student { FirstName = "Xénie", Classroom = "A", AverageGrade = 1.6},
+    new Student { FirstName = "Yvette", Classroom = "A", AverageGrade = 1.7},
+    new Student { FirstName = "Zoltán", Classroom = "B", AverageGrade = 4.1},
+};

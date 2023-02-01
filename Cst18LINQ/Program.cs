@@ -1,4 +1,5 @@
 ﻿using Cst18LINQ;
+using System.Reflection.Metadata.Ecma335;
 
 List<Student> students = new List<Student>
 {
@@ -29,3 +30,86 @@ List<Student> students = new List<Student>
     new Student { FirstName = "Yvette", Classroom = "A", AverageGrade = 1.7},
     new Student { FirstName = "Zoltán", Classroom = "B", AverageGrade = 4.1},
 };
+/*
+foreach (var x in students.OrderBy(x => x.AverageGrade))
+{
+    Console.WriteLine(x);
+}
+*/
+/*
+foreach (var x in students.OrderByDescending(x => x.AverageGrade))
+{
+    Console.WriteLine(x);
+}
+*/
+// Console.WriteLine(students.Average(x => x.AverageGrade));
+/*
+foreach (var x in students.Take(5))
+{
+    Console.WriteLine(x);
+}
+*/
+/*
+foreach (var x in students.OrderBy(x => x.AverageGrade).Take(5))
+{
+    Console.WriteLine(x);
+}
+*/
+/*
+foreach (var x in students.Where(x => x.Classroom == "A"))
+{
+    Console.WriteLine(x);
+}
+*/
+/*
+foreach (var x in students.Where(x => x.Classroom == "A").OrderBy(x =>x.AverageGrade))
+{
+    Console.WriteLine(x);
+}
+*/
+/*
+foreach (var x in students.Select(x => new { Name = x.FirstName, Class = x.Classroom }))
+{
+    Console.WriteLine(x);
+}
+*/
+/*
+foreach (var x in students.Select(x => {
+    return new Student
+    {
+        FirstName = "Fred",
+        Classroom = x.Classroom,
+        AverageGrade = x.AverageGrade
+    };
+}))
+{
+    Console.WriteLine(x);
+}
+*/
+/*
+foreach (var x in students.GroupBy(x => x.Classroom))
+{
+    Console.WriteLine(x.Key + " " + x.Count());
+}
+*/
+/*
+foreach (var x in students.GroupBy(x => x.Classroom))
+{
+    Console.WriteLine("-- " + x.Key + " --");
+    foreach (var y in x)
+    {
+        Console.WriteLine(y);
+    }
+}
+*/
+foreach (var x in students
+    .GroupBy(x => x.Classroom)
+    .Select(w => new StudentSummary { 
+        Name = w.Key, 
+        Count = w.Count(),
+        Avg = w.Average(y => y.AverageGrade)
+    })
+    .OrderBy(x => x.Avg))
+{
+    Console.WriteLine(x);
+}

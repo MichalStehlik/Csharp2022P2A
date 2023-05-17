@@ -51,9 +51,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cst23RegExp", "Cst23RegExp\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cst24files", "Cst24files\Cst24files.csproj", "{A87C4D87-CD51-4D72-9EA2-3BBDA957E7D8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cst2dll_lib", "Cst2dll_lib\Cst2dll_lib.csproj", "{06259F9A-83E8-47BC-88C7-D2F97F8FD276}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cst2dll_lib", "Cst2dll_lib\Cst2dll_lib.csproj", "{06259F9A-83E8-47BC-88C7-D2F97F8FD276}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cst25dll_app", "Cst25dll_app\Cst25dll_app.csproj", "{F3E5B94A-8914-4A9D-BF68-CB6E13BE8FB1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cst25dll_app", "Cst25dll_app\Cst25dll_app.csproj", "{F3E5B94A-8914-4A9D-BF68-CB6E13BE8FB1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cst26Downloader", "Cst26Downloader\Cst26Downloader.csproj", "{5EECC63A-8EF0-4573-AB2E-9A3D7C5BA262}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -165,6 +167,10 @@ Global
 		{F3E5B94A-8914-4A9D-BF68-CB6E13BE8FB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F3E5B94A-8914-4A9D-BF68-CB6E13BE8FB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F3E5B94A-8914-4A9D-BF68-CB6E13BE8FB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EECC63A-8EF0-4573-AB2E-9A3D7C5BA262}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EECC63A-8EF0-4573-AB2E-9A3D7C5BA262}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EECC63A-8EF0-4573-AB2E-9A3D7C5BA262}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EECC63A-8EF0-4573-AB2E-9A3D7C5BA262}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
